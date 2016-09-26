@@ -1,0 +1,22 @@
+function setup() {
+  createCanvas(500, 500);
+  background(0);
+}
+
+
+function draw() {
+  // for (var i = 20; i <= 480; i = i + 20) {
+  //   var x = 20;
+  //   var y = i;
+  //   ellipse (x , y , 15, 15);
+
+var x = 20;
+while (x < width-40) {
+  var y = 20;
+  while (y < height-40) {
+    ellipse(x + 20, y + 20, 20, 20);
+    y = y + 20;
+  }
+  x = x + 20;
+}
+}
