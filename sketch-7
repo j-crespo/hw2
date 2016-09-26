@@ -1,0 +1,27 @@
+function setup() {
+  createCanvas(500, 500);
+  background(100);
+}
+
+function draw() {
+  
+  stroke (255);
+  strokeWeight (2);
+  noFill();
+  for (var i = 20; i <= 480; i = i + 10) {
+    var sX = 20;
+    var sY = i;
+    var eX = 480;
+    var eY = i;
+    line (sX, sY, eX, eY);
+  } 
+  
+  for (var i = 20; i <= 480; i = i + 10) {
+    var sX = i;
+    var sY = 20;
+    var eX = i;
+    var eY = 480;
+    line (sX, sY, eX, eY);
+  }
+
+}
