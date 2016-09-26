@@ -1,0 +1,16 @@
+function setup() {
+  createCanvas(500, 500);
+  background(0);
+}
+
+
+function draw() {
+  for (var i = 40; i <= 460; i = i + 20) {
+    var sX = i;
+    var sY = i;
+    var eX = 25;
+    var eY = 25;
+    ellipse (sX, sY, eX, eY);
+  }
+
+}
