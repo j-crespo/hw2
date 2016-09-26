@@ -1,0 +1,30 @@
+function setup() {
+  createCanvas(500, 500);
+  background(0);
+}
+
+function draw() {
+  
+  stroke (255);
+  point (20, 20);
+  point (480, 480);
+  for (var i = 20; i <= 480; i = i + 10) {
+    var sX = 20;
+    var sY = i;
+    var eX = i;
+    var eY = 20;
+    line (sX, sY, eX, eY);
+  }
+  
+  for (var i = 20; i <= 480; i = i + 10) {
+    var sX = 480;
+    var sY = i;
+    var eX = i;
+    var eY = 480;
+    line (sX, sY, eX, eY); 
+  }
+  
+  noStroke();
+  textSize(480);
+  text("P", 85, 420);
+}
